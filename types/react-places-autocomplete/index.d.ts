@@ -60,7 +60,7 @@ export interface PropTypes {
             onKeyDown: React.KeyboardEventHandler;
             onBlur: React.FocusEventHandler;
             value: string | undefined;
-            onChange: (ev: { target: { value: string }}) => void;
+            onChange: (ev: { detail: { value: string }}) => void;
         } & InputProps;
         getSuggestionItemProps: <SuggestionProps extends {}>(suggestion: Suggestion, options?: SuggestionProps) => {
             key: number;
